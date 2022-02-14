@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Pontano+Sans');
+
+/* CSS used here will be applied after bootstrap.css */
+.carousel {
+    margin-top: 20px;
+}
+.item .thumb {
+	width: 25%;
+	cursor: pointer;
+	float: left;
+}
+.item .thumb img {
+	width: 100%;
+	margin: 2px;
+}
+.item img {
+	width: 100%;	
+}
+body {
+	background:url('');
+   }
+   .primary-btn-red{
+       background: red;
+   }
+   p{
+       font-size: 14px;
+    }
+
+    h6{
+        font-size: 14px;
+    }
+    .section-title{
+        color: blue;
+    }
+    a{
+        color: red;
+    }

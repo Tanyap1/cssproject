@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Pontano+Sans');
+
+/* CSS used here will be applied after bootstrap.css */
+.carousel {
+    margin-top: 20px;
+}
+.item .thumb {
+	width: 25%;
+	cursor: pointer;
+	float: left;
+}
+.item .thumb img {
+	width: 100%;
+	margin: 2px;
+}
+.item img {
+	width: 100%;	
+}
+body {
+	background:url('');
+   }
+   .primary-btn-blue{
+       background: lightskyblue;
+   }
+   p{
+       font-size: 14px;
+    }
+
+    h6{
+        font-size: 14px;
+    }
+    .nav-icon{
+        color: rgb(25, 135, 204);
+    }
+    .section-title--special{
+        background: rgb(25, 135, 204);
+        padding: 0.5rem 2rem;
+    }
+    .footer-icon , .nav-icon {
+        font-size: 1.5rem;
+        text-decoration: none;
+        color: rgb(25, 135, 204);
+        transition: all 1s ease-in-out;
+    }
+    
+    .footer-icon:hover {
+        color: gray;
+    }

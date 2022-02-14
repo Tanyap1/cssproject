@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+:root {
+    --mainBlue: #40acf1;
+    --mainWhite: #ffffff;
+    --mainBlack: #292f36;
+    --mainGray: rgb(216, 214, 214);
+    --mainYellow: #e3b505;
+    --mainred: red;
+    --transparentBlue: rgba(64, 172, 241,0.7);
+}
+
+.car-price-orange{
+    background-color: orange;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--mainBlack);
+    background: var(--mainWhite);
+}
+
+/* Nav  title */
+
+.section-title--special {
+    background: var(--mainred);
+   color: var(--mainWhite);
+   padding: 0.5rem 2rem;
+   clip-path:  polygon(10% 0, 100% 0, 90% 100%, 0 100%);
+}
+
+.navbar {
+    background: var(--mainWhite);
+}
+
+.navbar-icon {
+    font-size: 2rem;
+    color: red;
+}
+
+.navbar-toggler {
+    outline-color: red!important;
+}
+.nav-link-green {
+    color: green;
+}
+
+.nav-link-orange {
+    color: orange;
+}
+.nav-link-lime {
+    color: limegreen;
+}
+.nav-link-blue {
+    color: var(--mainBlue);
+}
+.nav-link-red{color: red;}
+
+
+
+
+.nav-icon:hover {
+    color: var(--mainBlack);
+}
+
+/* header */
+
+.header {
+    clip-path: polygon(0 0,100% 0,100% 95%,50% 100%,0 95%);
+    color: var(--mainWhite);
+}
+
+.height-max {
+
+    min-height: calc(80vh - 120px);
+    background: url(../images/d18409e4-ae54-4b6c-ba2b-d469037ae47f._SR970\,300_.jfif);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    animation-name: zoom;
+    animation-duration: 20s;
+    animation-delay: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2) translateX(-5%);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.title-heading {
+    background: rgba(0,0,0,0.4);
+    border-left: 0.3rem solid var(--mainBlue);
+}
+
+.title {
+    font-weight: 700;
+    font-size: 1.9rem;
+}
+
+@media screen and (min-width: 768px) {
+    .title {
+        font-size: 3rem;
+    }
+}
+
+.title-icon {
+    color: var(--mainBlue);
+    text-decoration: none!important;
+}
+
+.title-icon:hover {
+    color: var(--mainBlue);
+    opacity: 0.6;
+}
+.fa-play{
+    color: red;
+}
+/* about */
+
+.skills-icon {
+    font-size: 3rem;
+    color: var(--mainred);
+    background: var(--mainGray);
+}
+
+.skills-icon:hover {
+    color: var(--mainBlue);
+}
+
+.skills-underline {
+    width: 4rem;
+    height: 0.3rem;
+    background: var(--mainBlue);
+    margin: 1rem auto;
+}
+
+/* inventory */
+
+.inventory {
+    background: var(--mainGray);
+}
+
+.car-card {
+    border-radius: 0!important;
+}
+
+.car-img {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+/*cars value on the card*/
+.car-value-orange {
+    background: orange;
+    color: var(--mainWhite);
+    clip-path: polygon(15% 0,85% 0,100% 100%,0 100%);
+    transition: all 1s linear;
+}
+
+.car-value-orange:hover {
+    clip-path: polygon(0 0,100% 0,100% 100%,0 100%);
+    cursor:pointer;
+}
+.car-value-red {
+    background: red;
+    color: var(--mainWhite);
+    clip-path: polygon(15% 0,85% 0,100% 100%,0 100%);
+    transition: all 1s linear;
+}
+
+.car-value-red:hover {
+    clip-path: polygon(0 0,100% 0,100% 100%,0 100%);
+    cursor:pointer;
+}
+.car-value-grey {
+    background: rgb(141, 133, 121);
+    color: var(--mainWhite);
+    clip-path: polygon(15% 0,85% 0,100% 100%,0 100%);
+    transition: all 1s linear;
+}
+
+.car-value-grey:hover {
+    clip-path: polygon(0 0,100% 0,100% 100%,0 100%);
+    cursor:pointer;
+}
+.car-value-green {
+    background: green;
+    color: var(--mainWhite);
+    clip-path: polygon(15% 0,85% 0,100% 100%,0 100%);
+    transition: all 1s linear;
+}
+
+.car-value-green:hover {
+    clip-path: polygon(0 0,100% 0,100% 100%,0 100%);
+    cursor:pointer;
+}
+.car-value-blue {
+    background: var(--mainBlue);
+    color: var(--mainWhite);
+    clip-path: polygon(15% 0,85% 0,100% 100%,0 100%);
+    transition: all 1s linear;
+}
+
+.car-value-blue:hover {
+    clip-path: polygon(0 0,100% 0,100% 100%,0 100%);
+    cursor:pointer;
+}
+.car-value-lime {
+    background: rgb(19, 224, 19);
+    color: var(--mainWhite);
+    clip-path: polygon(15% 0,85% 0,100% 100%,0 100%);
+    transition: all 1s linear;
+}
+
+.car-value-lime:hover {
+    clip-path: polygon(0 0,100% 0,100% 100%,0 100%);
+    cursor:pointer;
+}
+/* question */
+
+.question-grey {
+    background: rgba(115, 180, 207, 0.75);
+}
+
+.question-red {
+    background: rgb(209, 54, 54);
+}
+
+.question-icon {
+    font-size: 4rem;
+    color: red;
+    transition: all 0.5s ease-in-out;
+}
+
+.question-icon:hover {
+    transform: translateY(-10%);
+    color: var(--mainWhite);
+}
+
+.question-info {
+    color: var(--mainWhite);
+}
+
+
+/*accordion and iframe youtube*/
+#feautured{
+      background: url("../images/automoblox-brochure-2.jpg")
+    center/cover fixed no-repeat;
+
+}
+.card-header{
+background:red;
+position: relative;
+overflow: hidden;
+opacity: .8;
+}
+.btn-info{
+    background-color: red;
+}
+.btn-link{
+    color: var(--mainWhite);
+}
+.card-body{
+    background: var(--mainWhite);
+}
+.img-container {
+    background: var(--mainred);
+    position: relative;
+    overflow: hidden;
+}
+
+.featured-photo {
+    transition: all 1s ease-in-out;
+}
+
+.img-container:hover .featured-photo {
+    transform: scale(1.3);
+    opacity: 0.5;
+}
+
+.featured-link {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 3rem;
+    transform: translate(-50%, -50%);
+    color: var(--mainBlack);
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+
+.featured-link:hover {
+    color: var(--mainWhite);
+}
+
+.img-container:hover .featured-link {
+    opacity: 1;
+}
+/* footer icons */
+
+.footer {
+    background: var(--mainBlack);
+    
+}footer p{
+    color: linen;
+    margin-left: 40%;
+}
+.footer-icon , .nav-icon {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: red;
+    transition: all 1s ease-in-out;
+}
+
+.footer-icon:hover {
+    color: blue;
+}
+/*modal*/
+#modal{
+    background: rgb(141, 133, 121);
+}
+
+.modal-title{
+color: crimson;
+
+}
+.modal-body{
+    background-image: url('../images/backgroundredcar.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    color: var(--mainWhite);
+}
+#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] { font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; }
+
+
+#contact h3 {
+	color:var(--mainWhite);
+	display: block;
+	font-size: 30px;
+	font-weight: 400;
+}
+
+#contact h4 {
+	margin:5px 0 15px;
+	display:block;
+	font-size:13px;
+}
+
+fieldset {
+	border: medium none !important;
+	margin: 0 0 10px;
+	min-width: 100%;
+	padding: 0;
+	width: 100%;
+}
+
+#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea {
+	width:100%;
+	border:1px solid #CCC;
+	background:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+}
+
+#contact input[type="text"]:hover, #contact input[type="email"]:hover, #contact input[type="tel"]:hover, #contact input[type="url"]:hover, #contact textarea:hover {
+	-webkit-transition:border-color 0.3s ease-in-out;
+	-moz-transition:border-color 0.3s ease-in-out;
+	transition:border-color 0.3s ease-in-out;
+	border:1px solid #AAA;
+}
+
+#contact textarea {
+	height:100px;
+	max-width:100%;
+  resize:none;
+}
+
+#contact button[type="submit"] {
+	cursor:pointer;
+	width:100%;
+	border:none;
+	background:#0CF;
+	color:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+	font-size:15px;
+}
+
+
+#contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
+
+#contact input:focus, #contact textarea:focus {
+	outline:0;
+	border:1px solid #999;
+}
+::-webkit-input-placeholder {
+ color:#888;
+}
+:-moz-placeholder {
+ color:#888;
+}
+::-moz-placeholder {
+ color:#888;
+}
+:-ms-input-placeholder {
+ color:#888;
+}
